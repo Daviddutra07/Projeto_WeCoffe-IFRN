@@ -5,18 +5,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     padding: 0px 100px;
 }
 
 .initial {
-    width: calc(100vw - 200px);
-    width: 100vw;
+    height: auto;
+    width: 100%;
     display: flex;
     align-items: center;
 }
-
-
 
 .initial img {
     opacity: 0.9;
@@ -26,7 +28,7 @@ body {
 }
 
 .initial .text {
-    width: calc(100vw - 920px);
+    width: calc(100% - 920px);
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -54,9 +56,11 @@ body {
 .buttons {
     display: flex;
     align-items: center;
-    width: calc(100vw - 100px);
-    height: 5vh;
+    width: calc(100%);
+    height: auto;
     margin: 20px 0px;
+    position: sticky;
+    top: 0;
 }
 
 .buttons ul{
@@ -81,11 +85,11 @@ body {
 }
 
 .main-cakes {
-    height: 100vh;
-    width: calc(100vw - 100px);
+    height: auto;
+    width: calc(100% - 100px);
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Três colunas */
-    gap: 20px; /* Espaçamento entre os bolos */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     align-items: center;
 }
 
@@ -115,11 +119,16 @@ body {
     color: #000;
 }
 
-
 .main-cakes div[class^='cake'] p {
     font-weight: 300;
     font-size: 14px;
     color: rgba(0, 0, 0, .5);
     text-align: justify;
 }
+
+.cake-box {
+    height: auto;
+    width: calc(100% - 200px);
+}
+
 
