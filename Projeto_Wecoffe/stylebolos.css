@@ -1,0 +1,125 @@
+* {
+    font-family: 'Montserrat';font-size: 22px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px 100px;
+}
+
+.initial {
+    width: calc(100vw - 200px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.initial img {
+    opacity: 0.9;
+    max-width: 100%;
+    height: auto;
+    width: 920px;
+}
+
+.initial .text {
+    width: calc(100vw - 920px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.initial span h5 {
+    color: rgba(0, 0, 0, .5);
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.initial span h1 {
+    color: #baa88d;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.initial span p {
+    color: #baa88d;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    width: calc(100vw - 100px);
+    height: 5vh;
+    margin: 20px 0px;
+}
+
+.buttons ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    font-size: 14px;
+    width: 83.16px;
+    height: 32px;
+    border: 1px solid #ad9778;
+    color: #ad9778;
+    border-radius: 50px;
+    background: white;
+}
+
+.buttons button:hover {
+    background-color: #ad9778;
+    color: white;
+}
+
+.main-cakes {
+    height: 100vh;
+    width: calc(100vw - 100px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px; /* Espaçamento entre os bolos */
+    align-items: center;
+}
+
+.main-cakes div[class^='cake'] {
+    width: 33.33%;
+    height: 500px;
+}
+
+.main-cakes div[class^='cake'] img {
+    width: 373.33px;
+    height: 373.33px;
+}
+.main-cakes div[class^='cake'] span {
+    display: flex;
+    flex-direction: column;
+    width: 373.3px;
+    gap: 10px;
+    height: 127px;
+}
+
+.main-cakes div[class^='cake'] h1 {
+    color: #727272;
+    letter-spacing: 2px;
+}
+
+.main-cakes div[class^='cake'] h1:hover {
+    color: #000;
+}
+
+
+.main-cakes div[class^='cake'] p {
+    font-weight: 300;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    text-align: justify;
+}
+
