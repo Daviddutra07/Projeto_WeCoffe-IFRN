@@ -10,7 +10,7 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
+.content {
     padding: 0px 100px;
 }
 
@@ -110,6 +110,7 @@ main {
     width: 373.33px;
     height: 373.33px;
 }
+
 .main-cakes div[class^='cake'] span {
     display: flex;
     flex-direction: column;
@@ -223,7 +224,6 @@ main {
     font-size: 23px;
 }
 
-
 .questions span h3 {
     color: #baa88d;
     font-size: 17px;
@@ -242,9 +242,8 @@ main {
     color: #baa88d;
 }
 
-.material-symbols-outlined {
-    color: white;
-    font-size: 14px;
+.questions button:hover {
+    cursor: pointer;
 }
 
 .order {
@@ -258,7 +257,7 @@ main {
 
 }
 
-.order button {
+.order a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,13 +269,26 @@ main {
     background-color: #8bb212;
     border: 1px solid transparent;
     border-radius: 50px;
-    padding: 0 25px;
+    gap: 10px;
+    text-decoration: none;
 }
 
-.order button:hover {
+.order a svg {
+    width: 20px;
+    height: 20px;
+    fill: transparent; 
+    stroke: white; 
+}
+
+.order a:hover svg {
+    stroke: #8bb212;
+}
+
+.order a:hover {
     background-color: white;
     color: #8bb212;
     border: 1px solid #8bb212;
+    stroke: #8bb212;
 }
 
 .order h3 {
@@ -289,4 +301,98 @@ main {
     color: #baa88d;
     font-size: 12px;
     text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #baa88d;
+    width: 100vw;   
+    height: auto;
+}
+
+footer img {
+    width: 250px;
+    max-width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.473);
+}
+
+.links a:first-of-type{
+    border: none;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+.links a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.238);
+    margin-left: 5px;
+    padding: 0px 5px;
+}
+
+.contatos svg:first-child {
+    width: 20px;
+    height: 20px;
+    fill: transparent; 
+    stroke: white; 
+}
+
+.contatos svg {
+    width: 20px;
+    height: 20px;
+    fill: white; 
+    stroke: white; 
+}
+
+footer .contatos-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contatos-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-left: -100px;
+    width: 250px;
+    max-width: 100%;
+    color: white;
+    font-size: 14px;
+    background-color: #ffffff00;
+    border: 1px solid white;
+    border-radius: 50px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+footer .contatos-box a:hover {
+    color: #baa88d;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid white;
+}
+
+footer .contatos-box a:hover svg{
+    fill: #baa88d;
+    stroke: #baa88d;
 }
