@@ -7,16 +7,24 @@
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     padding: 0px 100px;
 }
 
-.initial {
+.initial {  
     height: auto;
-    width: 100%;
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -32,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .initial span h5 {
@@ -56,7 +64,7 @@ body {
 .buttons {
     display: flex;
     align-items: center;
-    width: calc(100%);
+    width: 100%;
     height: auto;
     margin: 20px 0px;
     position: sticky;
@@ -88,13 +96,13 @@ body {
     height: auto;
     width: calc(100% - 100px);
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
     align-items: center;
 }
 
 .main-cakes div[class^='cake'] {
-    width: 33.33%;
+    width: 33.3%;
     height: 500px;
 }
 
@@ -127,8 +135,158 @@ body {
 }
 
 .cake-box {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: calc(100% - 100px);
+    position: relative;
+    background-color: #f5f4f2;
+    border-radius: 50px;
+}
+
+.cake-box img {
+    position: static;
+    width: 1200px;
+    max-width: 60%;
+    z-index: 1;
+    top: -10%;
+}
+
+.cake-box span {
+    max-height: 100%;
+    max-width: 40%;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 2;
+}
+
+.cake-box span h3 {
+    color: #ad9778;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.cake-box span h1 {
+    color: #ad9778;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.cake-box span p {
+    color: #ad9778;
+    font-size: 17px;
+    margin-top: 10px
+}
+
+.orders {
+    display: flex;
+    gap: 50px;
+    width: calc(100% - 100px);
     height: auto;
-    width: calc(100% - 200px);
+    margin-top: 150px;
+}
+
+.orders .q1-c {
+    display: none;
+}
+.orders .q2-c {
+    display: none;
+}
+.orders .q3-c {
+    display: none;
+}
+
+.orders span[class^="q"] p {
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.orders span[class^="q"] li {
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
 }
 
 
+.questions {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.questions h1 {
+    color: #baa88d;
+    font-size: 23px;
+}
+
+
+.questions span h3 {
+    color: #baa88d;
+    font-size: 17px;
+}
+.questions span {
+    display: flex;
+    justify-content: space-between;
+    color: #baa88d;
+    border-bottom: 1px solid #baa88d1c;
+}
+
+.questions button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #baa88d;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-size: 14px;
+}
+
+.order {
+    border-left: 1px solid #baa88d;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-left: 30px;
+
+}
+
+.order button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 300px;
+    max-width: 100%;
+    color: white;
+    font-size: 14px;
+    background-color: #8bb212;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 0 25px;
+}
+
+.order button:hover {
+    background-color: white;
+    color: #8bb212;
+    border: 1px solid #8bb212;
+}
+
+.order h3 {
+    color: #baa88d;
+    font-size: 23px;
+    text-align: center;
+}
+
+.order p {
+    color: #baa88d;
+    font-size: 12px;
+    text-align: center;
+}
