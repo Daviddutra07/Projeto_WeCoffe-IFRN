@@ -135,3 +135,29 @@ footer .contatos-box a:hover svg{
     fill: #baa88d;
     stroke: #baa88d;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar .links{
+        display: none;
+    }
+    
+    .navbar .redes {
+        display: none !important;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    footer .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

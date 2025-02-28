@@ -60,7 +60,7 @@ main {
 
 }
 
-.coffees{
+.coffees, .teas, .drinks, .sandwiches, .sweets{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,11 +93,12 @@ main {
     margin-left: 10px; 
 }
 
-.coffees img {
+.img-face {
     border-radius: 30px;
     width: 500px;
     max-width: 100%;
 }
+
 
 .products .product {
     display: flex;
@@ -115,6 +116,10 @@ main {
     width: 110px;
     height: 110px;
     max-width: 100%;
+}
+
+.products .name-price {
+    width: 100px;
 }
 
 .products .name-price h5{
@@ -135,9 +140,8 @@ main {
 }
 
 
-
-@media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
+    
     .products {
         align-items: center;
     }
