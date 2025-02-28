@@ -92,6 +92,13 @@ main {
     color: white;
 }
 
+.buttons #now {
+    background-color: #ad9778;
+    color: white;
+}
+
+
+
 .main-cakes {
     height: auto;
     width: calc(100% - 100px);
@@ -301,4 +308,78 @@ main {
     color: #baa88d;
     font-size: 12px;
     text-align: center;
+}
+
+    footer {
+        margin-top: 50px;
+    }
+
+@media screen and (max-width: 768px) {
+    .initial {
+        margin-top: 50px;
+    }
+
+    .initial .text {
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .initial .text p {
+        text-align: center;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    .content {
+        padding: 0px;
+    }
+    
+    .initial img {
+        display: none;
+    }
+
+    .orders {
+        flex-direction: column;
+    }
+
+    .main-cakes {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .main-cakes div[class^='cake'] {
+        width: 100%;
+        height: 500px;
+    }
+
+    .cake-box {
+        border-top: 1px solid #baa88d;
+        background-color: white;
+        border-radius: 0px;
+        border-bottom: 1px solid #baa88d;
+        width: 100%;
+    }
+
+    .questions {
+        width: 100%;
+    }
+
+    .adapt-media {
+        display: flex;
+        justify-content: center;
+    }
+
+    .order {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
 }
