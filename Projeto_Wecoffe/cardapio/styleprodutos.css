@@ -6,6 +6,7 @@
 }
 
 html, body {
+    scroll-behavior: smooth;
     height: 100%;
     overflow-x: hidden;
 }
@@ -13,6 +14,10 @@ html, body {
 .slide {
     display: flex;
     flex-direction: column;
+}
+
+.slide img {
+    max-width: 100%;
 }
 
 main {
@@ -38,4 +43,118 @@ main {
     background-color: white;
     min-width: 160px;
     color:  #ad9778;
+}
+
+.types button:hover {
+    color: white;
+    background-color: #ad9778;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 0px 10%;
+
+}
+
+.coffees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.products h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #baa88d;
+}
+
+.line {
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, .5);
+    letter-spacing: 1px; 
+    display: inline-flex; 
+    align-items: center; 
+    width: 100%; 
+}
+
+.line::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px; 
+    background: #baa88d; 
+    margin-left: 10px; 
+}
+
+.coffees img {
+    border-radius: 30px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.products .product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+#last {
+    border: none;
+}
+
+.products .product img {
+    width: 110px;
+    height: 110px;
+    max-width: 100%;
+}
+
+.products .name-price h5{
+    font-size: 16px;
+    color: #baa88d;
+    
+}
+
+.products .name-price p {
+    color: #baa88d;
+    font-size: 14px;
+}
+
+.products .product-desc {
+    color:#baa88d;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .products {
+        align-items: center;
+    }
+
+    .types {
+        overflow-x: auto;
+        white-space: nowrap; /* Impede quebra de linha */
+        padding: 0px 100px; /* Garante espaçamento para evitar corte */
+    }
+
+    .types button {
+        min-width: 120px;
+        flex-shrink: 0;
+    }   
+
+    .product {
+        flex-direction: column;
+        text-align: center;
+    }
 }
